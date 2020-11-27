@@ -1,0 +1,88 @@
+//Basic Styling
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p,
+h2,
+h3 {
+  margin: 5px 0;
+}
+
+//Utility Classes
+.py1 {
+  padding: 10px 0;
+}
+.py2 {
+  padding: 15px 0;
+}
+.py3 {
+  padding: 20px 0;
+}
+.py4 {
+  padding: 25px 0;
+}
+.py5 {
+  padding: 30px 0;
+}
+
+.my1 {
+  margin: 10px 0;
+}
+.my2 {
+  margin: 15px 0;
+}
+.my3 {
+  margin: 20px 0;
+}
+.my4 {
+  margin: 25px 0;
+}
+.my5 {
+  margin: 30px 0;
+}
+
+.title {
+  font-size: 55px;
+}
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 20px 20px;
+  background: #fff;
+  color: #333;
+  border-radius: 50px;
+  transition: 0.7s;
+  &:hover {
+    background: orange;
+    color: #fff;
+  }
+}
+
+.bottom-line {
+  height: 2px;
+  background: orange;
+  width: 60px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.section-title {
+  background: #000000;
+  color: #fff;
+  padding: 10px;
+}
+
+.current {
+  border: 3px solid orange;
+}

@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+.container {
+  max-width: 1100px;
+  margin: auto; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+p,
+h2,
+h3 {
+  margin: 5px 0; }
+
+.py1 {
+  padding: 10px 0; }
+
+.py2 {
+  padding: 15px 0; }
+
+.py3 {
+  padding: 20px 0; }
+
+.py4 {
+  padding: 25px 0; }
+
+.py5 {
+  padding: 30px 0; }
+
+.my1 {
+  margin: 10px 0; }
+
+.my2 {
+  margin: 15px 0; }
+
+.my3 {
+  margin: 20px 0; }
+
+.my4 {
+  margin: 25px 0; }
+
+.my5 {
+  margin: 30px 0; }
+
+.title {
+  font-size: 55px; }
+
+.text-center {
+  text-align: center; }
+
+.btn {
+  padding: 20px 20px;
+  background: #fff;
+  color: #333;
+  border-radius: 50px;
+  transition: 0.7s; }
+  .btn:hover {
+    background: orange;
+    color: #fff; }
+
+.bottom-line {
+  height: 2px;
+  background: orange;
+  width: 60px;
+  margin: auto;
+  margin-top: 5px; }
+
+.section-title {
+  background: #000000;
+  color: #fff;
+  padding: 10px; }
+
+.current {
+  border: 3px solid orange; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 1.5; }
+
+.home #section-a {
+  position: relative;
+  height: 100vh;
+  background: url("../images/bg.jpg") no-repeat center/cover;
+  color: #fff;
+  padding: 50px; }
+  .home #section-a .lead {
+    font-size: 25px; }
+  .home #section-a .image {
+    position: relative;
+    background: url("../images/person1.jpg") no-repeat center/cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 0.7s;
+    margin: 10% auto auto auto;
+    text-align: initial; }
+  .home #section-a .image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/person1-color.jpg") no-repeat center/cover;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s 0.4s; }
+  .home #section-a .image:hover {
+    transform: rotate(360deg); }
+  .home #section-a .image:hover::after {
+    opacity: 1; }
+  .home #section-a .navbar {
+    background: #000000;
+    height: 110vh;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .home #section-a .navbar .icon {
+      padding: 0 0;
+      width: 60px; }
+    .home #section-a .navbar ul {
+      padding: 20px;
+      font-size: 18px;
+      margin-top: 50%; }
+      .home #section-a .navbar ul li {
+        padding: 18px 8px;
+        margin: 70px 0;
+        border-radius: 80px; }
+        .home #section-a .navbar ul li:hover {
+          border: 3px solid orange; }
+      .home #section-a .navbar ul .li-1:hover {
+        border: none; }
+.home #section-b .about-me {
+  display: flex;
+  align-items: center; }
+.home #section-b .about-me div {
+  flex: 1; }
+.home #section-b .who {
+  background: #333;
+  color: #fff;
+  padding: 20px; }
+.home #section-b .about {
+  background: orange;
+  padding: 50px;
+  color: #fff;
+  font-size: 18px; }
+.home #section-c .types {
+  display: flex;
+  justify-content: space-evenly; }
+  .home #section-c .types .fas {
+    padding: 30px;
+    color: #fff;
+    background: #000000;
+    border-radius: 50%; }
+  .home #section-c .types .section-title {
+    background: orange;
+    border-radius: 10px; }
+.home #section-d .my-experience {
+  display: flex;
+  align-items: center; }
+.home #section-d .my-experience div {
+  flex: 1; }
+.home #section-d .experience {
+  background: #333;
+  color: #fff;
+  padding: 20px; }
+.home #section-d .info {
+  background: orange;
+  padding: 50px;
+  color: #fff;
+  font-size: 18px; }
+
+#main-footer {
+  text-align: center;
+  background: #000000; }
+  #main-footer .social {
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 0.9; }
+    #main-footer .social:hover {
+      background: orange;
+      color: #fff; }
+
+.testimonials .navbar,
+.gallery .navbar,
+.contact .navbar {
+  background: #000000;
+  position: static;
+  background: url("../images/bg.jpg") no-repeat center/cover; }
+  .testimonials .navbar .li-1,
+  .gallery .navbar .li-1,
+  .contact .navbar .li-1 {
+    display: none; }
+  .testimonials .navbar ul,
+  .gallery .navbar ul,
+  .contact .navbar ul {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px; }
+    .testimonials .navbar ul li,
+    .gallery .navbar ul li,
+    .contact .navbar ul li {
+      padding: 12px 15px;
+      border-radius: 50px; }
+      .testimonials .navbar ul li:hover,
+      .gallery .navbar ul li:hover,
+      .contact .navbar ul li:hover {
+        border: 3px solid orange; }
+
+.testimonials #section-b .reviews .review {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px; }
+  .testimonials #section-b .reviews .review .name-img-location {
+    display: flex;
+    align-items: center;
+    background: #333;
+    color: #fff; }
+    .testimonials #section-b .reviews .review .name-img-location .person {
+      width: 80px;
+      border-radius: 50%;
+      padding: 10px;
+      margin-left: 17%; }
+  .testimonials #section-b .reviews .review .detail {
+    background: orange;
+    padding: 40px;
+    color: #fff;
+    font-size: 18px; }
+.testimonials #section-b .reviews .review div {
+  flex: 1; }
+
+.gallery #section-b .wildlife,
+.gallery #section-b .nature,
+.gallery #section-b .events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px; }
+.gallery #section-b .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.2s 0.2s; }
+  .gallery #section-b .img:hover {
+    transform: scale(1.3); }
+
+.contact #section-b form {
+  padding: 10px; }
+  .contact #section-b form .input-txt {
+    display: block;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px; }
+.contact #section-b .btn {
+  border: none;
+  background: #000000;
+  color: #fff;
+  width: 50%;
+  transition: 0.7s; }
+  .contact #section-b .btn:hover {
+    background: orange; }
+.contact #section-c {
+  background: #000000; }
+  .contact #section-c .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff; }
+    .contact #section-c .contact-info .fas {
+      font-size: 60px;
+      transition: 1s;
+      padding: 40px;
+      border-radius: 50%; }
+      .contact #section-c .contact-info .fas:hover {
+        color: #333;
+        background: #fff; }
+    .contact #section-c .contact-info .info {
+      padding: 30px; }
+
+@media (max-width: 768px) {
+  .home #section-a .showcase {
+    margin-left: 15%; }
+
+  .contact #section-b form .input-txt {
+    width: 80%;
+    margin: 30px auto auto auto; } }
+@media (max-width: 600px) {
+  .home #section-a {
+    position: static;
+    height: 80vh; }
+    .home #section-a .lead {
+      margin-bottom: 20px; }
+    .home #section-a .showcase {
+      margin: 30% auto auto 0; }
+    .home #section-a .image {
+      width: 200px;
+      height: 200px; }
+    .home #section-a .title {
+      font-size: 40px; }
+    .home #section-a .navbar {
+      background: none;
+      position: static;
+      height: initial; }
+      .home #section-a .navbar .li-1 {
+        display: none; }
+      .home #section-a .navbar ul {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin-top: 0;
+        padding: 0; }
+        .home #section-a .navbar ul li {
+          padding: 12px 15px;
+          border-radius: 50px;
+          margin: 0; }
+          .home #section-a .navbar ul li:hover {
+            border: 3px solid orange; }
+
+  .home #section-b .about-me,
+  .home #section-c .types,
+  .home #section-d .my-experience,
+  .testimonials #section-b .reviews .review,
+  .contact #section-c .contact-info {
+    flex-direction: column;
+    text-align: center; }
+
+  .testimonials #section-b .reviews .review .name-img-location {
+    padding: 15px;
+    border-radius: 10px; }
+    .testimonials #section-b .reviews .review .name-img-location .person {
+      width: 60px;
+      margin-left: 0; }
+
+  .gallery #section-b .wildlife,
+  .gallery #section-b .nature,
+  .gallery #section-b .events {
+    grid-template-columns: repeat(2, 1fr); } }
+@media (max-height: 540px) {
+  .home #section-a .showcase {
+    margin: 0 auto auto 0; }
+  .home #section-a .image {
+    width: 200px;
+    height: 200px; }
+  .home #section-a .title {
+    font-size: 40px;
+    margin-top: 5px; }
+  .home #section-a .lead,
+  .home #section-a .btn {
+    display: none; }
+  .home #section-a .navbar {
+    background: none;
+    position: static;
+    height: initial; }
+    .home #section-a .navbar .li-1 {
+      display: none; }
+    .home #section-a .navbar ul {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      padding: 10px;
+      margin-top: 0;
+      padding: 0; }
+      .home #section-a .navbar ul li {
+        padding: 12px 15px;
+        border-radius: 50px;
+        margin: 0; }
+        .home #section-a .navbar ul li:hover {
+          border: 3px solid orange; } }
+
+/*# sourceMappingURL=style.css.map */

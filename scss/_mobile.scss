@@ -1,0 +1,138 @@
+//Tablets
+@media (max-width: 768px) {
+  .home #section-a .showcase {
+    margin-left: 15%;
+  }
+  .contact #section-b form .input-txt {
+    width: 80%;
+    margin: 30px auto auto auto;
+  }
+}
+
+//Mobile Devices
+@media (max-width: 600px) {
+  .home {
+    #section-a {
+      position: static;
+      height: 80vh;
+      .lead {
+        margin-bottom: 20px;
+      }
+      .showcase {
+        margin: 30% auto auto 0;
+      }
+      .image {
+        width: 200px;
+        height: 200px;
+      }
+      .title {
+        font-size: 40px;
+      }
+
+      .navbar {
+        background: none;
+        position: static;
+        height: initial;
+        .li-1 {
+          display: none;
+        }
+        ul {
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          justify-content: space-evenly;
+          padding: 10px;
+          margin-top: 0;
+          padding: 0;
+
+          li {
+            padding: 12px 15px;
+            border-radius: 50px;
+            margin: 0;
+            //Displays border over navbar items
+            &:hover {
+              border: 3px solid orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Common Flexbox Styling for all Pages
+  .home #section-b .about-me,
+  .home #section-c .types,
+  .home #section-d .my-experience,
+  .testimonials #section-b .reviews .review,
+  .contact #section-c .contact-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  //Styling the reviewr name, addres and picture
+  .testimonials #section-b .reviews .review .name-img-location {
+    padding: 15px;
+    border-radius: 10px;
+    .person {
+      width: 60px;
+      margin-left: 0;
+    }
+  }
+
+  //Displaying 2 images insted of 3 per row.
+  .gallery #section-b {
+    .wildlife,
+    .nature,
+    .events {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+//Landscape Mode
+@media (max-height: 540px) {
+  .home #section-a {
+    .showcase {
+      margin: 0 auto auto 0;
+    }
+    .image {
+      width: 200px;
+      height: 200px;
+    }
+    .title {
+      font-size: 40px;
+      margin-top: 5px;
+    }
+    .lead,
+    .btn {
+      display: none;
+    }
+    .navbar {
+      background: none;
+      position: static;
+      height: initial;
+      .li-1 {
+        display: none;
+      }
+      ul {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin-top: 0;
+        padding: 0;
+
+        li {
+          padding: 12px 15px;
+          border-radius: 50px;
+          margin: 0;
+          //Displays border over navbar items
+          &:hover {
+            border: 3px solid orange;
+          }
+        }
+      }
+    }
+  }
+}
